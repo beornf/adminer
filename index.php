@@ -10,7 +10,7 @@ function adminer_object()
 		include_once "./$filename";
 	}
 
-	$input = file_get_contents('.hosts');
+	$input = file_get_contents(".hosts");
 	$hosts = $input ? unserialize($input) : array();
 	array_unshift($hosts, "localhost");
 
